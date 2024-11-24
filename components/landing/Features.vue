@@ -1,39 +1,39 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Hand-Coded Web Design",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "We don't use website builders. They're clunky, slow, and filled with bloat. We hand-code your site, ensuring it’s perfectly tailored to your business and built to last.",
+    icon: "bx:code-alt",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Responsive & Mobile-Optimized:",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Your website will seamlessly adjust to any device, providing a smooth and engaging experience for your customers—whether on desktop or mobile.",
+    icon: "bx:bxs-devices",
   },
   {
-    title: "On-Demand Components",
+    title: "Built for Local Businesses",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "We understand what it takes for local businesses to succeed. Your customers, new or old, will appreciate a quality website. A good site makes it easy for them, and we make it easy for you.",
+    icon: "bx:bxs-compass",
   },
   {
-    title: "Broad Integration",
+    title: "SEO & Performance-Driven",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Our hand-coded websites are built with SEO and speed in mind, ensuring that your site ranks well on search engines and performs at its best.",
+    icon: "bx:bxs-search",
   },
   {
-    title: "SEO Enabled",
+    title: "Affordable, Transparent Pricing",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "At UnderCloud, hand-crafted sites come at a fair price. No website builders, no hidden fees, no hassle—just clear, upfront pricing and exceptional value.",
+    icon: "bx:bxs-dollar-circle",
   },
   {
     title: "Community",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "We don’t just build your website and walk away. As our client, you have our total priotity. We offer continuous support and unlimited edits to ensure your site remains up-to-date and performs flawlessly.",
     icon: "bx:bxs-user",
   },
 ];
@@ -42,11 +42,12 @@ const features = [
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      Your website is your digital handshake
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      The world has gone digital. In this new world, the first thing people will
+      see about you is your website. A good website is a strong, firm handshake.
+      And just like your handshake, people will judge you by your website.
     </p>
   </div>
 
