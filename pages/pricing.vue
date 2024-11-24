@@ -35,7 +35,7 @@ const pricing = [
       "Branding package",
       "SEO Optimization",
       "Hosting Included",
-      "$100 per page after 5",
+      "$100 fee Per Page after 5",
       "Unlimited Edits",
       "Lifetime Updates",
     ],
