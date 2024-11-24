@@ -19,14 +19,14 @@
         Your website.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        UnderCloud is a startup in North Haven Connecticut specializing in
-        creating high-quality, hand-crafted websites that attract and convert
+        UnderCloud is a web design agency in North Haven Connecticut specialized
+        in creating high-quality, hand-crafted websites that attract and convert
         customers. Empower your business with a powerful online presence.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <NuxtLink
           class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black text-white hover:bg-gray-800 border-2 border-transparent"
-          to="contact"
+          to="pricing"
           >Get Started</NuxtLink
         >
         <NuxtLink
