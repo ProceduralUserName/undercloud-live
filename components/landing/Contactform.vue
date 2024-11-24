@@ -60,7 +60,11 @@ onMounted(() => {
     class="needs-validation"
     novalidate
   >
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input
+      type="hidden"
+      name="access_key"
+      value="0c1728cc-dd5c-4367-9f76-e30146c0dc61"
+    />
     <!-- Create your free access key from https://web3forms.com/ -->
     <input
       type="checkbox"
@@ -71,7 +75,7 @@ onMounted(() => {
     <div class="mb-5">
       <input
         type="text"
-        placeholder="Full Name"
+        placeholder="Your Name"
         required
         class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
         name="name"
@@ -80,6 +84,32 @@ onMounted(() => {
         Please provide your full name.
       </div>
     </div>
+    <div class="mb-5">
+      <input
+        type="text"
+        placeholder="Business Name"
+        required
+        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="nameBusiness"
+      />
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Please provide a business.
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <input
+        type="text"
+        placeholder="Industry of Work"
+        required
+        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="nameBusiness"
+      />
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Please provide an indsutry.
+      </div>
+    </div>
+
     <div class="mb-5">
       <label for="email_address" class="sr-only">Email Address</label
       ><input
@@ -97,11 +127,12 @@ onMounted(() => {
         Please provide a valid email address.
       </div>
     </div>
+
     <div class="mb-3">
       <textarea
         name="message"
         required
-        placeholder="Your Message"
+        placeholder="Tell us about your business and availability! Leave your phone number and we will call you during business hours!"
         class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       ></textarea>
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
