@@ -3,12 +3,12 @@
     <div class="p-24 md:order-1 hidden md:block">
       <img
         class="rounded-full transition-transform transform hover:scale-125"
-        src="~/assets/img/hero.jpg"
+        src="~/assets/img/logo-color.png"
         alt="Starship starts the engine"
         loading="eager"
         format="avif"
-        width="512"
-        height="512"
+        width="1012"
+        height="1012"
       />
     </div>
 
@@ -24,20 +24,17 @@
         customers. Empower your business with a powerful online presence.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          rel="noopener"
-          >Get Started</LandingLink
+        <NuxtLink
+          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black text-white hover:bg-gray-800 border-2 border-transparent"
+          to="contact"
+          >Get Started</NuxtLink
         >
-        <LandingLink
-          size="lg"
-          styleName="outline"
-          rel="noopener"
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          >View Repo</LandingLink
+        <NuxtLink
+          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black"
+          to="about"
         >
+          Why Us?
+        </NuxtLink>
       </div>
     </div>
   </main>
