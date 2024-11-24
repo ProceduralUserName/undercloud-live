@@ -13,7 +13,7 @@
     <div class="flex mt-5">
       <NuxtLink
         class="router-link-active router-link-exact-active rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white text-black border-2 border-transparent"
-        to="contact"
+        to="pricing"
         >Get started</NuxtLink
       >
     </div>

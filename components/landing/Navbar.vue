@@ -20,15 +20,22 @@ const menuitems = [
 
 const open = ref(false);
 </script>
-
+<!-- grid md:grid-cols-3 -->
 <template>
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
+        <!-- <img
+          src="/assets/img/logo-color.png"
+          alt="logo"
+          width="45%"
+          height="45%"
+        /> -->
         <a href="/" class="text-lg"
-          ><span class="font-bold text-purple-800">Under</span
-          ><span class="text-lightpurple-500">Cloud</span>
+          ><span class="font-bold text-purple-800">Under</span>
+          <span class="text-lightpurple-500">Cloud</span>
         </a>
+
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
             <svg
@@ -68,16 +75,16 @@ const open = ref(false);
           </li>
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
+          <NuxtLink to="about" styleName="muted" block size="md"
+            >Who am I?</NuxtLink
           >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
+          <NuxtLink to="about" size="md" block>Who am I?</NuxtLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
+          <NuxtLink to="about">Who am I?</NuxtLink>
+          <LandingLink href="pricing" size="md">Get Started</LandingLink>
         </div>
       </div>
     </header>
