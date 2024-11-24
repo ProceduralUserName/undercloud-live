@@ -14,12 +14,14 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Marketing website done with Nuxt
+        Hand-coded.<br />
+        Your business.<br />
+        Your website.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Nuxtship is a starter template for startups, marketing websites &
-        landing pages.<wbr /> Built with Nuxt & TailwindCSS. You can quickly
-        create any website with this starter.
+        UnderCloud is a startup in North Haven Connecticut specializing in
+        creating high-quality, hand-crafted websites that attract and convert
+        customers. Empower your business with a powerful online presence.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
