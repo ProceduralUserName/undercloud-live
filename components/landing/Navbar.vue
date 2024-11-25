@@ -25,16 +25,13 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <!-- <img
-          src="/assets/img/logo-color.png"
-          alt="logo"
-          width="45%"
-          height="45%"
-        /> -->
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-purple-800">Under</span>
-          <span class="text-lightpurple-500">Cloud</span>
-        </a>
+        <NuxtLink to="/">
+          <img
+            src="/assets/img/logo-color.png"
+            alt="logo"
+            class="h-48 w-auto"
+          />
+        </NuxtLink>
 
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
@@ -74,11 +71,11 @@ const open = ref(false);
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
+        <div class="lg:hidden flex flex-col items-start mt-3 gap-4">
           <NuxtLink to="about" styleName="muted" block size="md"
             >Who am I?</NuxtLink
           >
-          <NuxtLink to="about" size="md" block>Who am I?</NuxtLink>
+          <LandingLink href="pricing" size="md">Get Started</LandingLink>
         </div>
       </nav>
       <div>
