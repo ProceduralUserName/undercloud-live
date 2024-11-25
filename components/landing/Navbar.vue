@@ -69,11 +69,11 @@ const open = ref(false);
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
+        <div class="lg:hidden flex flex-col items-start mt-3 gap-4">
           <NuxtLink to="about" styleName="muted" block size="md"
             >Who am I?</NuxtLink
           >
-          <NuxtLink to="about" size="md" block>Who am I?</NuxtLink>
+          <LandingLink href="pricing" size="md">Get Started</LandingLink>
         </div>
       </nav>
       <div>
