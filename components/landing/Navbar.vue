@@ -25,11 +25,13 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <img
-          src="/assets/img/logo-color.png"
-          alt="logo"
-          class="h-48 w-auto"
-        />
+        <NuxtLink to="/">
+          <img
+            src="/assets/img/logo-color.png"
+            alt="logo"
+            class="h-48 w-auto"
+          />
+        </NuxtLink>
 
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
