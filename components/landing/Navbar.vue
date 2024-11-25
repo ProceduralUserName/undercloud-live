@@ -25,16 +25,11 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <!-- <img
+        <img
           src="/assets/img/logo-color.png"
           alt="logo"
-          width="45%"
-          height="45%"
-        /> -->
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-purple-800">Under</span>
-          <span class="text-lightpurple-500">Cloud</span>
-        </a>
+          class="h-48 w-auto"
+        />
 
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
