@@ -18,7 +18,7 @@
     </div>
 
     <div class="px-4 md:px-8 text-center lg:text-left">
-      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-white">
+      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-yellow-alt">
         Hand-coded.<br />
         Your business.<br />
         Your website.
@@ -57,5 +57,10 @@ export default {
 </script>
 
 <style scoped>
-/* additional styles here */
+.text-yellow-alt {
+  color: #FFC107
+}
+.text-purple-alt {
+  color: #9f7aea
+}
 </style>
