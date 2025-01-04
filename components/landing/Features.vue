@@ -41,10 +41,10 @@ const features = [
 
 <template>
   <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Your website is your digital handshake
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center pt-10">
+      Your website is your digital handshake &#x1F91D
     </h2>
-    <p class="text-lg mt-4 text-slate-600">
+    <p class="text-lg mt-4 text-slate-600 text-center">
       The world has gone digital. In this new world, the first thing people will
       see about you is your website. A good website is a strong, firm handshake.
       And just like your handshake, people will judge you by your website.
