@@ -1,11 +1,13 @@
 <template>
   <main
     :class="[
-      'w-full grid lg:grid-cols-2 items-center h-screen',
+      'w-full grid lg:grid-cols-2 items-center h-screen rounded-lg',
       backgroundColor
     ]"
   >
     <div class="p-4 md:p-8 md:order-1 hidden md:block">
+
+
       <div class="relative max-w-[600px] w-full aspect-square overflow-hidden rounded-full mx-auto">
         <img
           class="transition-transform transform hover:scale-125 w-full h-full object-cover"
