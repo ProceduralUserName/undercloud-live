@@ -1,3 +1,33 @@
+<template>
+  <div class="mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center pt-10">
+      Your website is your digital handshake &#x1F91D
+    </h2>
+    <p class="text-lg mt-4 text-slate-600 text-center">
+      In today's digital world, your website is often the first impression you make. 
+      Like a firm handshake, a well-crafted website speaks volumes about your character, 
+      showcases your professionalism, and leaves a lasting impact.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8">
+    <div
+      v-for="item of features"
+      class="flex flex-col gap-4 items-start bg-purple-500 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
+    >
+      <div class="mt-1 bg-transparent rounded-full p-2 w-12 h-12 flex items-center justify-center shrink-0">
+        <Icon :name="item.icon" class="text-logo-color text-3xl" />
+      </div>
+      <div>
+        <h3 class="text-title-color font-bold text-xl">{{ item.title }}</h3>
+        <p class="mt-2 leading-relaxed">
+          {{ item.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 const features = [
   {
@@ -33,35 +63,17 @@ const features = [
   {
     title: "Community",
     description:
-      "We don’t just build your website and walk away. As our client, you have our total priotity. We offer continuous support and unlimited edits to ensure your site remains up-to-date and performs flawlessly.",
+      "We don’t just build your website and walk away. As our client, you have our total priority. We offer continuous support and unlimited edits to ensure your site remains up-to-date and performs flawlessly.",
     icon: "bx:bxs-user",
   },
 ];
 </script>
 
-<template>
-  <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Your website is your digital handshake
-    </h2>
-    <p class="text-lg mt-4 text-slate-600">
-      The world has gone digital. In this new world, the first thing people will
-      see about you is your website. A good website is a strong, firm handshake.
-      And just like your handshake, people will judge you by your website.
-    </p>
-  </div>
-
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-    <div v-for="item of features" class="flex gap-4 items-start">
-      <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon" />
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">{{ item.title }}</h3>
-        <p class="text-slate-500 mt-2 leading-relaxed">
-          {{ item.description }}
-        </p>
-      </div>
-    </div>
-  </div>
-</template>
+<style scoped>
+.text-logo-color {
+  color: #FFFFFF;
+}
+.text-title-color {
+  color: #FFC107
+}
+</style>
