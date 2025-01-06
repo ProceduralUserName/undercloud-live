@@ -1,27 +1,27 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+  import { ref, onMounted, onUnmounted } from "vue";
 
-const menuitems = [
-  { title: "Home", path: "/" },
-  { title: "Pricing", path: "/pricing" },
-  { title: "About", path: "/about" },
-  { title: "Contact", path: "/contact" },
-];
+  const menuitems = [
+    { title: "Home", path: "/" },
+    { title: "Pricing", path: "/pricing" },
+    { title: "About", path: "/about" },
+    { title: "Contact", path: "/contact" },
+  ];
 
-const open = ref(false);
-const scrolled = ref(false);
+  const open = ref(false);
+  const scrolled = ref(false);
 
-const handleScroll = () => {
-  scrolled.value = window.scrollY > 10;
-};
+  const handleScroll = () => {
+    scrolled.value = window.scrollY > 10;
+  };
 
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
+  onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
 
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
+  onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+  });
 </script>
 
 <template>
@@ -29,7 +29,7 @@ onUnmounted(() => {
     <header
       :class="[
         'fixed top-0 left-0 w-full z-10 transition-shadow duration-300',
-        scrolled ? 'bg-white shadow-lg' : 'bg-white'
+        scrolled ? 'bg-white shadow-lg' : 'bg-white',
       ]"
     >
       <div
@@ -82,7 +82,7 @@ onUnmounted(() => {
               </a>
             </li>
           </ul>
-          <div class="lg:hidden flex flex-col items-start mt-3 gap-4">
+          <div class="lg:hidden flex flex-col items-start mt-3 mx-3 gap-4">
             <NuxtLink to="about" class="text-black hover:text-purple-500"
               >Who am I?</NuxtLink
             >

@@ -13,7 +13,7 @@
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8">
     <div
       v-for="item of features"
-      class="flex flex-col gap-4 items-start bg-purple-500 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
+      class="flex flex-col gap-4 items-start hero-gradient text-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
     >
       <div class="mt-1 bg-transparent rounded-full p-2 w-12 h-12 flex items-center justify-center shrink-0">
         <Icon :name="item.icon" class="text-logo-color text-3xl" />
@@ -76,4 +76,7 @@ const features = [
 .text-title-color {
   color: #FFC107
 }
+.hero-gradient {
+    background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
+  }
 </style>
