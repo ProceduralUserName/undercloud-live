@@ -1,8 +1,10 @@
 <template>
   <div
-    class="bg-purple-500 px-20 py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center"
+    class="hero-gradient px-20 py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center"
   >
-    <h2 class="text-title-color text-3xl md:text-6xl">
+    <h2
+      class="text-title-color text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight"
+    >
       Ready to strengthen that handshake?
     </h2>
     <p class="text-white mt-4 text-lg md:text-xl">
@@ -22,6 +24,10 @@
 
 <style scoped>
   .text-title-color {
-    color: #FFC107
-}
+    color: #ffc107;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
+  }
 </style>
