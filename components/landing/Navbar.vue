@@ -74,12 +74,12 @@
         >
           <ul class="flex flex-col lg:flex-row lg:gap-3">
             <li v-for="item of menuitems" :key="item.title">
-              <a
-                :href="item.path"
+              <NuxtLink
+                :to="item.path"
                 class="flex lg:px-3 py-2 text-black hover:text-purple-500 transition duration-200 ease-in-out"
               >
                 {{ item.title }}
-              </a>
+              </NuxtLink>
             </li>
           </ul>
           <div class="lg:hidden flex flex-col items-start mt-3 mx-3 gap-4">
