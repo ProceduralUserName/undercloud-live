@@ -1,67 +1,67 @@
 <script setup>
-  definePageMeta({
-    layout: "landing",
-  });
+definePageMeta({
+  layout: "landing",
+});
 
-  const pricing = [
-    {
-      name: "Lump Sum",
-      price: "$3400",
-      popular: false,
-      features: [
-        "Development and Design",
-        "Branding Package",
-        "SEO Optimization",
-        "$25/mo Hosting",
-        "$100 fee Per Page after 5",
-        "$50/mo unlimited edits package",
-      ],
-      button: {
-        text: "Get Started",
-        link: "/contact",
-      },
+const pricing = [
+  {
+    name: "Lump Sum",
+    price: "$3400",
+    popular: false,
+    features: [
+      "Development and Design",
+      "Branding Package",
+      "SEO Optimization",
+      "$25/mo Hosting",
+      "$100 fee Per Page after 5",
+      "$50/mo unlimited edits package",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/contact",
     },
-    {
-      name: "Monthly",
-      price: {
-        monthly: "$150",
-        annual: "$1750",
-        discount: "$50",
-        original: "1800",
-      },
-      popular: true,
-      features: [
-        "Development and Design",
-        "Branding package",
-        "SEO Optimization",
-        "Hosting Included",
-        "$100 fee Per Page after 5",
-        "Unlimited Edits",
-        "Lifetime Updates",
-      ],
-      button: {
-        text: "Get Started",
-        link: "/contact",
-      },
+  },
+  {
+    name: "Monthly",
+    price: {
+      monthly: "$150",
+      annual: "$1750",
+      discount: "$50",
+      original: "1800",
     },
-    {
-      name: "eCommerce",
-      price: "$5k",
-      popular: false,
-      features: [
-        "Custom Shopify Store",
-        "Integrated Shipping",
-        "Fully Editable in Shopify CMS",
-        "Payment integration",
-        "Dedicated Account Manager",
-        "Initial Product Data Normalization",
-      ],
-      button: {
-        text: "Coming soon",
-        link: "/pricing",
-      },
+    popular: true,
+    features: [
+      "Development and Design",
+      "Branding package",
+      "SEO Optimization",
+      "Hosting Included",
+      "$100 fee Per Page after 5",
+      "Unlimited Edits",
+      "Lifetime Updates",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/contact",
     },
-  ];
+  },
+  {
+    name: "eCommerce",
+    price: "$5k",
+    popular: false,
+    features: [
+      "Custom Shopify Store",
+      "Integrated Shipping",
+      "Fully Editable in Shopify CMS",
+      "Payment integration",
+      "Dedicated Account Manager",
+      "Initial Product Data Normalization",
+    ],
+    button: {
+      text: "Coming soon",
+      link: "/pricing",
+    },
+  },
+];
 </script>
 
 <template>
@@ -99,48 +99,48 @@
             </li>
           </ul>
         </div>
-        <a
-          :href="item.button.link"
+        <NuxtLink
+          :to="item.button.link"
           class="mt-4 inline-block text-center bg-white text-purple-500 font-medium py-2 px-4 rounded"
         >
           {{ item.button.text }}
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </LandingContainer>
 </template>
 
 <style scoped>
-  .custom-card {
-    background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+.custom-card {
+  background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  .custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
-  .popular-card {
-    background: none;
-    background-color: #9333ea;
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  }
+.popular-card {
+  background: none;
+  background-color: #9333ea;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
 
-  .popular-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  }
+.popular-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  .text-yellow-alt {
-    color: #ffc107;
-  }
+.text-yellow-alt {
+  color: #ffc107;
+}
 </style>
