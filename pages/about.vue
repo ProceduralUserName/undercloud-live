@@ -10,7 +10,7 @@
   const team = [
     {
       name: "Traveler",
-      title: "Europe",
+      title: "North America",
       avatar: {
         src: TeamImg1,
         width: 480,

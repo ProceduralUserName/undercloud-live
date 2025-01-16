@@ -63,7 +63,7 @@ const features = [
   {
     title: "Community",
     description:
-      "We don’t just build your website and walk away. As our client, you have our total priority. We offer continuous support and unlimited edits to ensure your site remains up-to-date and performs flawlessly.",
+      "We don’t just build your website and walk away. As our client, you have our total priority. We offer continuous support to ensure your site remains up-to-date and performs flawlessly.",
     icon: "bx:bxs-user",
   },
 ];

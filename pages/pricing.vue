@@ -14,7 +14,7 @@ const pricing = [
       "SEO Optimization",
       "$25/mo Hosting",
       "$100 fee Per Page after 5",
-      "$50/mo unlimited edits package",
+      "$50/mo edits package",
     ],
     button: {
       text: "Get Started",
@@ -36,7 +36,7 @@ const pricing = [
       "SEO Optimization",
       "Hosting Included",
       "$100 fee Per Page after 5",
-      "Unlimited Edits",
+      "Edits and Support",
       "Lifetime Updates",
     ],
     button: {
