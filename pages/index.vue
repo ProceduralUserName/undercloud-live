@@ -12,3 +12,10 @@ definePageMeta({
     <LandingCta></LandingCta>
   </LandingContainer>
 </template>
+
+<style scoped>
+/* Ensure child components are layered correctly */
+.main {
+  position: relative;
+}
+</style>

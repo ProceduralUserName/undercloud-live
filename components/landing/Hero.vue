@@ -1,9 +1,12 @@
 <template>
   <main
-    class="w-full grid lg:grid-cols-2 items-center h-screen rounded-lg hero-gradient"
+    class="w-full grid lg:grid-cols-2 items-center h-screen rounded-lg relative"
   >
+    <!-- Spider Background -->
+    <Spider class="absolute inset-0 w-full h-full" />
+
     <!-- Image Section -->
-    <div class="p-4 md:p-8 md:order-1 hidden md:block">
+    <div class="p-4 md:p-8 md:order-1 hidden md:block z-10">
       <div
         class="relative max-w-[600px] w-full aspect-square overflow-hidden rounded-full mx-auto"
       >
@@ -18,7 +21,7 @@
     </div>
 
     <!-- Content Section -->
-    <div class="px-4 md:px-8 text-center lg:text-left">
+    <div class="px-4 md:px-8 text-center lg:text-left z-10">
       <h1
         class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-yellow-alt"
       >
@@ -51,21 +54,29 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      backgroundColor: {
-        type: String,
-        default: "",
-      },
+import Spider from "~/components/landing/Spider.vue";
+
+export default {
+  components: {
+    Spider,
+  },
+  props: {
+    backgroundColor: {
+      type: String,
+      default: "",
     },
-  };
+  },
+};
 </script>
 
 <style scoped>
-  .hero-gradient {
-    background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
-  }
-  .text-yellow-alt {
-    color: #ffc107;
-  }
+/* Remove the gradient and replace it with the Spider component */
+.text-yellow-alt {
+  color: #ffc107;
+}
+
+/* Ensure child components are layered correctly */
+.main {
+  position: relative;
+}
 </style>
