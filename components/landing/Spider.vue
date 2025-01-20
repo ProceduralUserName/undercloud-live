@@ -34,6 +34,9 @@ export default {
       let ky = rnd(0.5, 0.5);
       let walkRadius = pt(rnd(50, 50), rnd(50, 50));
       let r = innerWidth / rnd(100, 150);
+      let isFleeing = false;
+      let fleeTx = null;
+      let fleeTy = null;
 
       function paintPt(pt) {
         pts2.forEach((pt2) => {
@@ -49,18 +52,45 @@ export default {
       }
 
       return {
-        follow(x, y) {
-          tx = x;
-          ty = y;
+        follow(mx, my) {
+          if (!isFleeing) {
+            tx = mx;
+            ty = my;
+          }
+        },
+        flee(mx, my) {
+          isFleeing = true;
+          fleeTx = mx;
+          fleeTy = my;
+
+          // Stop fleeing after a timeout
+          setTimeout(() => {
+            isFleeing = false;
+            fleeTx = null;
+            fleeTy = null;
+          }, 300);
         },
         tick(t) {
-          const selfMoveX = cos(t * kx + seed) * walkRadius.x;
-          const selfMoveY = sin(t * ky + seed) * walkRadius.y;
-          let fx = tx + selfMoveX;
-          let fy = ty + selfMoveY;
+          if (isFleeing && fleeTx !== null && fleeTy !== null) {
+            // Calculate vector away from fleeTx, fleeTy
+            const dx = x - fleeTx;
+            const dy = y - fleeTy;
+            const distance = hypot(dx, dy) || 1; // Avoid division by zero
+            const fleeSpeed = 15; // Speed multiplier for fleeing
 
-          x += min(innerWidth / 100, (fx - x) / 10);
-          y += min(innerWidth / 100, (fy - y) / 10);
+            // Move away from the click point
+            x += (dx / distance) * fleeSpeed;
+            y += (dy / distance) * fleeSpeed;
+          } else {
+            // Normal behavior
+            const selfMoveX = cos(t * kx + seed) * walkRadius.x;
+            const selfMoveY = sin(t * ky + seed) * walkRadius.y;
+            let fx = tx + selfMoveX;
+            let fy = ty + selfMoveY;
+
+            x += min(innerWidth / 100, (fx - x) / 10);
+            y += min(innerWidth / 100, (fy - y) / 10);
+          }
 
           let i = 0;
           pts.forEach((pt) => {
@@ -84,6 +114,11 @@ export default {
 
     window.addEventListener("pointermove", (e) => {
       spiders.forEach((spider) => spider.follow(e.clientX, e.clientY));
+    });
+
+    // Add click event to make spiders flee
+    window.addEventListener("click", (e) => {
+      spiders.forEach((spider) => spider.flee(e.clientX, e.clientY));
     });
 
     function anim(t) {
