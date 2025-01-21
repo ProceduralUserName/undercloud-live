@@ -32,7 +32,7 @@ export default {
       let y = rnd(innerHeight);
       let kx = rnd(0.5, 0.5);
       let ky = rnd(0.5, 0.5);
-      let walkRadius = pt(rnd(50, 50), rnd(50, 50));
+      let walkRadius = pt(rnd(50, 200), rnd(50, 100));
       let r = innerWidth / rnd(100, 150);
       let isFleeing = false;
       let fleeTx = null;
@@ -68,7 +68,7 @@ export default {
             isFleeing = false;
             fleeTx = null;
             fleeTy = null;
-          }, 300);
+          }, 500);
         },
         tick(t) {
           if (isFleeing && fleeTx !== null && fleeTy !== null) {
@@ -191,5 +191,9 @@ body {
 
 canvas {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 </style>
+
+<!-- Here -->

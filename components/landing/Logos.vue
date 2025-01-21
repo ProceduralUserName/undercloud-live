@@ -1,6 +1,8 @@
 <template>
-  <div class="mt-24">
-    <h2 class="text-center text-4xl lg:text-5xl font-bold text-black">
+  <div class="mt-24 dark:bg-black">
+    <h2
+      class="text-center text-4xl lg:text-5xl font-bold text-black dark:text-white"
+    >
       We use cutting-edge technology, the best of the best
     </h2>
     <div
@@ -13,7 +15,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-blacktext-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg dark:text-white opacity-0 group-hover:opacity-100 transition-opacity"
           >Nuxt.js</span
         >
       </div>
@@ -24,7 +26,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black dark:text-white opacity-0 group-hover:opacity-100 transition-opacity"
           >Tailwind CSS</span
         >
       </div>
@@ -35,7 +37,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black dark:text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity"
           >Vue.js</span
         >
       </div>
@@ -46,7 +48,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black dark:text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity"
           >HTML5</span
         >
       </div>
@@ -57,7 +59,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black dark:text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity"
           >JavaScript</span
         >
       </div>
@@ -68,7 +70,7 @@
           size="48"
         />
         <span
-          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black text-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          class="absolute left-1/2 transform -translate-x-1/2 mt-2 text-black dark:text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity"
           >GitHub</span
         >
       </div>

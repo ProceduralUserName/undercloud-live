@@ -1,23 +1,23 @@
 <template>
   <main
-    class="w-full grid lg:grid-cols-2 items-center h-screen rounded-lg relative"
+    class="w-full grid lg:grid-cols-2 items-center h-screen rounded-lg relative place-items-center"
   >
     <!-- Spider Background -->
     <Spider class="absolute inset-0 w-full h-full" />
 
     <!-- Image Section -->
     <div class="p-4 md:p-8 md:order-1 hidden md:block z-10">
-      <div
+      <!-- <div
         class="relative max-w-[600px] w-full aspect-square overflow-hidden rounded-full mx-auto"
-      >
-        <img
-          class="transition-transform transform hover:scale-125 w-full h-full object-cover"
-          src="~/assets/img/logo-color.png"
-          alt="Starship starts the engine"
-          loading="eager"
-          format="avif"
-        />
-      </div>
+      > -->
+      <img
+        class="transition-transform transform hover:scale-110 max-w-lg h-auto object-cover"
+        src="~/assets/img/underCloud_color.png"
+        alt="Starship starts the engine"
+        loading="eager"
+        format="avif"
+      />
+      <!-- </div> -->
     </div>
 
     <!-- Content Section -->
@@ -38,12 +38,12 @@
         class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"
       >
         <NuxtLink
-          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black text-white hover:bg-gray-800 border-2 border-transparent"
+          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black border-1 border-purple-400 text-white border-2 border-purple-400 hover:bg-black hover:text-purple-600 hover:border-black"
           to="pricing"
           >Get Started</NuxtLink
         >
         <NuxtLink
-          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black"
+          class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black text-black hover:bg-black hover:text-purple-600"
           to="about"
         >
           Why Us?

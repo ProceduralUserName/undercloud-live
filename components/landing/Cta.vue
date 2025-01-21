@@ -14,7 +14,7 @@
     </p>
     <div class="flex mt-5">
       <NuxtLink
-        class="router-link-active router-link-exact-active rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black hover:bg-gray-800 text-white border-2 border-transparent"
+        class="router-link-active router-link-exact-active rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black hover:bg-amber-500 hover:text-black text-white border-2 border-transparent"
         to="pricing"
         >Get started</NuxtLink
       >
@@ -23,11 +23,11 @@
 </template>
 
 <style scoped>
-  .text-title-color {
-    color: #ffc107;
-  }
+.text-title-color {
+  color: #ffc107;
+}
 
-  .hero-gradient {
-    background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
-  }
+.hero-gradient {
+  background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
+}
 </style>

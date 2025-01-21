@@ -29,7 +29,7 @@ onUnmounted(() => {
     <header
       :class="[
         'fixed top-0 left-0 w-full z-20 transition-shadow duration-300',
-        scrolled ? 'bg-white shadow-lg' : 'bg-white',
+        scrolled ? 'bg-black shadow-lg' : 'bg-black',
       ]"
     >
       <div
@@ -76,22 +76,22 @@ onUnmounted(() => {
             <li v-for="item of menuitems" :key="item.title">
               <NuxtLink
                 :to="item.path"
-                class="flex lg:px-3 py-2 text-black hover:text-purple-500 transition duration-200 ease-in-out"
+                class="flex lg:px-3 py-2 text-black dark:text-white hover:text-amber-500 transition duration-200 ease-in-out"
               >
                 {{ item.title }}
               </NuxtLink>
             </li>
           </ul>
           <div class="lg:hidden flex flex-col items-start mt-3 mx-3 gap-4">
-            <NuxtLink to="about" class="text-black hover:text-purple-500"
+            <NuxtLink to="about" class="text-white hover:text-amber-500"
               >Who am I?</NuxtLink
             >
-            <LandingLink href="pricing" size="md">Get Started</LandingLink>
+            <LandingLink href="pricing" size="md">Get Started/</LandingLink>
           </div>
         </nav>
-        <div>
+        <div class="justify-items-end">
           <div class="hidden lg:flex items-center gap-4">
-            <NuxtLink to="about" class="text-black hover:text-purple-500"
+            <NuxtLink to="about" class="text-white hover:text-amber-500"
               >Who am I?</NuxtLink
             >
             <LandingLink href="pricing" size="md">Get Started</LandingLink>
