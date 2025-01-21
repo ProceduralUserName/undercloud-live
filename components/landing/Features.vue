@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-black">
+  <div class="dark:bg-black rounded-lg pb-16">
   
   <div class="mt-16 md:mt-0 grid grid-cols-1">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center pt-10 dark:text-white ">
@@ -12,10 +12,10 @@
     </p>
   </div>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8 mx-16">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8 mx-16 ">
     <div
       v-for="item of features"
-      class="flex flex-col gap-4 items-start hero-gradient text-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
+      class="flex flex-col gap-4 items-start bg-gradient-to-r hover:from-purple-600 hover:to-orange-500 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl "
     >
       <div class="mt-1 bg-transparent rounded-full p-2 w-12 h-12 flex items-center justify-center shrink-0">
         <Icon :name="item.icon" class="text-logo-color text-3xl" />
@@ -82,4 +82,7 @@ const features = [
 .hero-gradient {
     background: linear-gradient(135deg, #7c3aed, #a855f7, #d8b4fe);
   }
+/* .hero-gradient :hover {
+    background: linear-gradient(135deg, purple, #a855f7, #d8b4fe);
+} */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-24 dark:bg-black">
+  <div class="mt-24 py-10 dark:bg-black rounded-lg">
     <h2
       class="text-center text-4xl lg:text-5xl font-bold text-black dark:text-white"
     >
@@ -10,7 +10,7 @@
     >
       <div class="relative group">
         <Icon
-          class="h-8 md:h-14 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-14 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:nuxtdotjs"
           size="48"
         />
@@ -21,7 +21,7 @@
       </div>
       <div class="relative group">
         <Icon
-          class="h-8 md:h-14 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-14 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:tailwindcss"
           size="48"
         />
@@ -32,7 +32,7 @@
       </div>
       <div class="relative group">
         <Icon
-          class="h-8 md:h-14 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-14 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:vuedotjs"
           size="48"
         />
@@ -43,7 +43,7 @@
       </div>
       <div class="relative group">
         <Icon
-          class="h-8 md:h-14 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-14 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:html5"
           size="48"
         />
@@ -54,7 +54,7 @@
       </div>
       <div class="relative group">
         <Icon
-          class="h-8 md:h-12 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-12 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:javascript"
           size="48"
         />
@@ -65,7 +65,7 @@
       </div>
       <div class="relative group">
         <Icon
-          class="h-8 md:h-12 text-purple-500 transition-transform transform group-hover:scale-105"
+          class="h-8 md:h-12 text-purple-500 text-logo-color transition-transform transform group-hover:scale-105"
           name="simple-icons:github"
           size="48"
         />
@@ -77,3 +77,9 @@
     </div>
   </div>
 </template>
+
+<style>
+.text-logo-color:hover {
+  color: #ffc107;
+}
+</style>
