@@ -101,7 +101,7 @@ const pricing = [
             </li>
           </ul>
         </div>
-        <div class="mt-4">
+        <div class="mt-4 inline-block text-center">
           <ButtonsFireflyButton :destination="item.button.link">
             Get Started</ButtonsFireflyButton
           >
