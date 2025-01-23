@@ -3,7 +3,7 @@ defineProps(["plan"]);
 </script>
 
 <template>
-  <div>
+  <div class="dark:bg-black">
     <div
       class="flex flex-col w-full order-first lg:order-none border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md"
     >
@@ -37,7 +37,7 @@ defineProps(["plan"]);
         <LandingLink
           :href="plan.button.link || '#'"
           block
-          :styleName="plan.popular ? 'primary' : 'outline'"
+          :styleName="plan.popular ? 'primary2' : 'outline2'"
         >
           {{ plan.button.text || "Get Started" }}
         </LandingLink>

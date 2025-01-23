@@ -1,35 +1,35 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
-  const menuitems = [
-    { title: "Home", path: "/" },
-    { title: "Pricing", path: "/pricing" },
-    { title: "About", path: "/about" },
-    { title: "Contact", path: "/contact" },
-  ];
+const menuitems = [
+  { title: "Home", path: "/" },
+  { title: "Pricing", path: "/pricing" },
+  { title: "About", path: "/about" },
+  { title: "Contact", path: "/contact" },
+];
 
-  const open = ref(false);
-  const scrolled = ref(false);
+const open = ref(false);
+const scrolled = ref(false);
 
-  const handleScroll = () => {
-    scrolled.value = window.scrollY > 10;
-  };
+const handleScroll = () => {
+  scrolled.value = window.scrollY > 10;
+};
 
-  onMounted(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
 
-  onUnmounted(() => {
-    window.removeEventListener("scroll", handleScroll);
-  });
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
   <LandingContainer>
     <header
       :class="[
-        'fixed top-0 left-0 w-full z-10 transition-shadow duration-300',
-        scrolled ? 'bg-white shadow-lg' : 'bg-white',
+        'fixed top-0 left-0 w-full z-20 transition-shadow duration-300',
+        scrolled ? 'bg-black shadow-lg' : 'bg-black',
       ]"
     >
       <div
@@ -76,22 +76,22 @@
             <li v-for="item of menuitems" :key="item.title">
               <NuxtLink
                 :to="item.path"
-                class="flex lg:px-3 py-2 text-black hover:text-purple-500 transition duration-200 ease-in-out"
+                class="flex lg:px-3 py-2 text-black dark:text-white hover:text-amber-500 transition duration-200 ease-in-out"
               >
                 {{ item.title }}
               </NuxtLink>
             </li>
           </ul>
           <div class="lg:hidden flex flex-col items-start mt-3 mx-3 gap-4">
-            <NuxtLink to="about" class="text-black hover:text-purple-500"
+            <NuxtLink to="about" class="text-white hover:text-amber-500"
               >Who am I?</NuxtLink
             >
-            <LandingLink href="pricing" size="md">Get Started</LandingLink>
+            <LandingLink href="pricing" size="md">Get Started/</LandingLink>
           </div>
         </nav>
-        <div>
+        <div class="justify-items-end">
           <div class="hidden lg:flex items-center gap-4">
-            <NuxtLink to="about" class="text-black hover:text-purple-500"
+            <NuxtLink to="about" class="text-white hover:text-amber-500"
               >Who am I?</NuxtLink
             >
             <LandingLink href="pricing" size="md">Get Started</LandingLink>

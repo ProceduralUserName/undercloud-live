@@ -65,9 +65,11 @@ const pricing = [
 </script>
 
 <template>
-  <LandingContainer class="my-40">
+  <LandingContainer class="py-20">
     <LandingSectionhead>
-      <template v-slot:title>Pricing</template>
+      <template v-slot:title>
+        <div class="dark:text-amber-500">Pricing</div></template
+      >
       <template v-slot:desc
         >Simple & Predictable pricing. No Surprises.</template
       >
@@ -99,12 +101,18 @@ const pricing = [
             </li>
           </ul>
         </div>
+        <div class="mt-4 inline-block text-center">
+          <ButtonsFireflyButton :destination="item.button.link">
+            Get Started</ButtonsFireflyButton
+          >
+        </div>
+        <!-- 
         <NuxtLink
           :to="item.button.link"
-          class="mt-4 inline-block text-center bg-white text-purple-500 font-medium py-2 px-4 rounded"
+          class="mt-4 inline-block text-center bg-black text-white border-purple-400 hover:text-amber-500 font-medium py-2 px-4 rounded"
         >
           {{ item.button.text }}
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
   </LandingContainer>
