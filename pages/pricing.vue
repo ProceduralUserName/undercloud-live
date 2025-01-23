@@ -101,12 +101,18 @@ const pricing = [
             </li>
           </ul>
         </div>
+        <div class="mt-4">
+          <ButtonsFireflyButton :destination="item.button.link">
+            Get Started</ButtonsFireflyButton
+          >
+        </div>
+        <!-- 
         <NuxtLink
           :to="item.button.link"
           class="mt-4 inline-block text-center bg-black text-white border-purple-400 hover:text-amber-500 font-medium py-2 px-4 rounded"
         >
           {{ item.button.text }}
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
   </LandingContainer>

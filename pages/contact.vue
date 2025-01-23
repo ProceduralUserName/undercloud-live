@@ -1,11 +1,11 @@
 <script setup>
-  definePageMeta({
-    layout: "landing",
-  });
+definePageMeta({
+  layout: "landing",
+});
 </script>
 
 <template>
-  <LandingContainer class="my-40">
+  <LandingContainer class="pt-6 pb-10">
     <LandingSectionhead>
       <template v-slot:title>Contact</template>
       <template v-slot:desc>I'm here to help!</template>
@@ -46,28 +46,28 @@
 </template>
 
 <style scoped>
-  .custom-card {
-    background-color: #a855f7;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+.custom-card {
+  background-color: #a855f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  .custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  .text-yellow-alt {
-    color: #ffc107;
-  }
+.text-yellow-alt {
+  color: #ffc107;
+}
 </style>

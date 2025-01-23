@@ -77,7 +77,7 @@ onMounted(() => {
         type="text"
         placeholder="Your Name"
         required
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 focus:text-white"
         name="name"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -89,7 +89,7 @@ onMounted(() => {
         type="text"
         placeholder="Business Name"
         required
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 focus:text-white"
         name="nameBusiness"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -102,7 +102,7 @@ onMounted(() => {
         type="text"
         placeholder="Industry of Work"
         required
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 focus:text-white"
         name="nameBusiness"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -118,7 +118,7 @@ onMounted(() => {
         placeholder="Email Address"
         name="email"
         required
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 focus:text-white"
       />
       <div class="empty-feedback text-red-400 text-sm mt-1">
         Please provide your email address.
@@ -136,7 +136,7 @@ onMounted(() => {
         placeholder="Phone Number"
         name="phone_number"
         required
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 focus:text-white"
       />
       <div class="empty-feedback text-red-400 text-sm mt-1">
         Please provide your phone number.
@@ -151,7 +151,7 @@ onMounted(() => {
         name="message"
         required
         placeholder="Tell us about your business and availability! Leave your phone number and we will call you during business hours!"
-        class="w-full px-4 py-3 border-2 text-gray-800 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        class="w-full px-4 py-3 border-2 text-amber-500 placeholder:text-purple-300 rounded-md outline-none focus:border-amber-500 border-purple-600 ring-gray-100 bg-gradient-to-r from-black to-indigo-950 focus:from-purple-600 focus:to-orange-500 h-36 focus:text-white"
       ></textarea>
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         Please enter your message.
