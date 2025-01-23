@@ -12,7 +12,7 @@
       > -->
       <img
         class="transition-transform transform hover:scale-110 max-w-lg h-auto object-cover"
-        src="~/assets/img/underCloud_color.png"
+        src="~/assets/img/name_logo_2.png"
         alt="Starship starts the engine"
         loading="eager"
         format="avif"
