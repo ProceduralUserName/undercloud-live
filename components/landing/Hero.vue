@@ -30,9 +30,10 @@
         Your website.
       </h1>
       <p class="text-lg mt-4 max-w-xl mx-auto lg:mx-0 text-white">
-        UnderCloud is a web design agency in North Haven Connecticut specialized
-        in creating high-quality, hand-crafted websites that attract and convert
-        customers. Empower your business with a powerful online presence.
+        UnderCloud is a web design agency founded in North Haven Connecticut
+        specialized in creating high-quality, hand-crafted websites that attract
+        and convert customers. Empower your business with a powerful online
+        presence.
       </p>
       <div
         class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"

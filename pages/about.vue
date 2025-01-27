@@ -65,7 +65,7 @@
     </div>
 
     <!-- Team Section -->
-     <div class="dark:bg-black rounded-lg pb-16 mx-60 mt-8 py-8">
+     <div class="bg-black rounded-lg pb-16 mx-60 mt-8 py-8">
       <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg">
       <div
         v-for="(member, index) in team"
