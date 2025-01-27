@@ -12,7 +12,7 @@ const open = ref(false);
 const scrolled = ref(false);
 
 const handleScroll = () => {
-  scrolled.value = window.scrollY > 10;
+  scrolled.value = window.scrollY > 100;
 };
 
 onMounted(() => {

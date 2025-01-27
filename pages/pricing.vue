@@ -68,7 +68,11 @@ const pricing = [
   <LandingContainer class="py-20">
     <LandingSectionhead>
       <template v-slot:title>
-        <div class="dark:text-amber-500">Pricing</div></template
+        <div
+          class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 pb-8"
+        >
+          Pricing
+        </div></template
       >
       <template v-slot:desc
         >Simple & Predictable pricing. No Surprises.</template
@@ -131,7 +135,6 @@ const pricing = [
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
-
 .popular-card {
   background: none;
   background-color: #9333ea;
