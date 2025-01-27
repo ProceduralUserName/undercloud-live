@@ -13,7 +13,9 @@ definePageMeta({
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-lg mt-12">
       <!-- Left Section -->
-      <div class="custom-card p-6">
+      <div
+        class="custom-card p-6 bg-gradient-to-r from-purple-600 to-orange-500"
+      >
         <h2
           class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight text-yellow-alt"
         >

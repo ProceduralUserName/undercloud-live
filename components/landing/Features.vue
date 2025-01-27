@@ -1,11 +1,11 @@
 <template>
-  <div class="dark:bg-black rounded-lg pb-16">
+  <div class="bg-black rounded-lg pb-16">
   
   <div class="mt-16 md:mt-0 grid grid-cols-1">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center pt-10 dark:text-white ">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center pt-10 text-white ">
       Your website is your digital handshake &#x1F91D
     </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center mx-10 dark:text-gray-400">
+    <p class="text-lg mt-4 text-center mx-10 text-gray-400">
       In today's digital world, your website is often the first impression you make. 
       Like a firm handshake, a well-crafted website speaks volumes about your character, 
       showcases your professionalism, and leaves a lasting impact.

@@ -3,7 +3,7 @@ defineProps(["plan"]);
 </script>
 
 <template>
-  <div class="dark:bg-black">
+  <div class="bg-black">
     <div
       class="flex flex-col w-full order-first lg:order-none border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md"
     >

@@ -12,7 +12,7 @@ const open = ref(false);
 const scrolled = ref(false);
 
 const handleScroll = () => {
-  scrolled.value = window.scrollY > 10;
+  scrolled.value = window.scrollY > 100;
 };
 
 onMounted(() => {
@@ -28,8 +28,14 @@ onUnmounted(() => {
   <LandingContainer>
     <header
       :class="[
-        'fixed top-0 left-0 w-full z-20 transition-shadow duration-300',
-        scrolled ? 'bg-black shadow-lg' : 'bg-black',
+        // Positioning & transition classes
+        'fixed top-0 left-1/2 -translate-x-1/2 z-20 transition-all duration-500 ease-in-out',
+
+        // When scrolled
+        scrolled
+          ? 'bg-gradient-to-r from-purple-600 to-orange-500 shadow-lg mt-8 rounded-lg w-4/5'
+          : // Default (not scrolled)
+            'bg-black mt-0 rounded-none w-full',
       ]"
     >
       <div
@@ -76,7 +82,10 @@ onUnmounted(() => {
             <li v-for="item of menuitems" :key="item.title">
               <NuxtLink
                 :to="item.path"
-                class="flex lg:px-3 py-2 text-black dark:text-white hover:text-amber-500 transition duration-200 ease-in-out"
+                :class="[
+                  'flex lg:px-3 py-2 text-white transition duration-200 ease-in-out',
+                  scrolled ? 'hover:text-black' : 'hover:text-amber-500',
+                ]"
               >
                 {{ item.title }}
               </NuxtLink>
