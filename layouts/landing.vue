@@ -42,12 +42,14 @@ export default {
         // Standard Meta tags for SEO
         { hid: 'description', name: 'description', content: "Creating high-quality, hand-crafted websites that attract and convert customers." },
         { hid: 'keywords', name: 'keywords', content: "Undercloud, web design, small business websites, affordable websites, SEO, hosting services" },
-        { hid: 'author', name: 'author', content: 'Undercloud' },
+        { hid: 'author', name: 'author', content: "Undercloud" },
 
         // Open Graph Tags
         { hid: 'og:title', property: 'og:title', content: "Affordable Websites for Small Businesses - Undercloud" },
         { hid: 'og:description', property: 'og:description', content: "Creating high-quality, hand-crafted websites that attract and convert customers." },
-        { hid: 'og:image', property: 'og:image', content: "assets/img/og_image.png" },
+        { hid: 'og:image', property: 'og:image', content: "https://undercloud.pro/og_image.png" },
+        { hid: 'og:image:alt', property: 'og:image:alt', content: "A preview image showcasing Undercloud's web design services for small businesses" },
+        { hid: 'og:site_name', property: 'og:site_name', content: "Undercloud" },
       ],
       script: [
         {
