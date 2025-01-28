@@ -2,12 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  // app: {
-  //   head: {
-  //     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-  //     title: "UnderCloud",
-  //   },
-  // },
+  modules: ["nuxt-icon", "@nuxtjs/sitemap"],
+  compatibilityDate: "2024-11-23",
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -15,6 +11,15 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-icon"],
-  compatibilityDate: "2024-11-23",
+  sitemap: {
+    hostname: "https://undercloud.pro",
+    gzip: true,
+    exclude: [], // routes to exclude here
+    routes: ["/", "/about", "/pricing", "/contact"],
+  },
+  robots: {
+    UserAgent: "*",
+    Allow: "/",
+    Sitemap: "https://undercloud.pro/sitemap.xml",
+  },
 });
