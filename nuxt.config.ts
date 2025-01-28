@@ -4,6 +4,20 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: ["nuxt-icon", "@nuxtjs/robots", "@nuxtjs/sitemap"],
   compatibilityDate: "2024-11-23",
+  app: {
+    head: {
+      title: "Undercloud - Affordable Websites for Small Businesses",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Undercloud specializes in affordable, high-quality websites tailored for small businesses to attract and convert customers.",
+        },
+      ],
+    },
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
