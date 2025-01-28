@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Undercloud - Affordable Websites for Small Businesses",
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       meta: [
         {
           hid: "description",
