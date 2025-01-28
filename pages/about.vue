@@ -3,6 +3,8 @@
     layout: "landing",
   });
 
+  
+
   const TeamImg3 = "/simon.JPEG";
   const TeamImg2 = "/simonSurf.jpg";
   const TeamImg1 = "/simonTravel.jpeg";
