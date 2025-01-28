@@ -15,6 +15,11 @@ export default defineNuxtConfig({
           content:
             "Undercloud specializes in affordable, high-quality websites tailored for small businesses to attract and convert customers.",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://undercloud.pro/og_image.png",
+        },
       ],
     },
   },
