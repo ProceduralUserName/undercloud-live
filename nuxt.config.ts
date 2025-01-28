@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-icon", "@nuxtjs/sitemap"],
+  modules: ["nuxt-icon", "@nuxtjs/robots", "@nuxtjs/sitemap"],
   compatibilityDate: "2024-11-23",
   postcss: {
     plugins: {
