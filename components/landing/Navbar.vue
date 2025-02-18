@@ -28,14 +28,10 @@ onUnmounted(() => {
   <LandingContainer>
     <header
       :class="[
-        // Positioning & transition classes
         'fixed top-0 left-1/2 -translate-x-1/2 z-20 transition-all duration-500 ease-in-out',
-
-        // When scrolled
         scrolled
           ? 'bg-gradient-to-r from-purple-600 to-orange-500 shadow-lg mt-8 rounded-lg w-4/5'
-          : // Default (not scrolled)
-            'bg-black mt-0 rounded-none w-full',
+          : 'bg-black mt-0 rounded-none w-full',
       ]"
     >
       <div
@@ -51,10 +47,16 @@ onUnmounted(() => {
           </NuxtLink>
 
           <div class="block lg:hidden">
-            <button @click="open = !open" class="text-gray-800">
+            <button
+              @click="open = !open"
+              :class="[
+                'transition-colors duration-200',
+                scrolled ? 'text-gray-800' : 'text-purple-500',
+              ]"
+            >
               <svg
                 fill="currentColor"
-                class="w-4 h-4"
+                class="w-6 h-6"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -74,6 +76,7 @@ onUnmounted(() => {
             </button>
           </div>
         </div>
+
         <nav
           class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
           :class="{ block: open, hidden: !open }"
@@ -82,6 +85,7 @@ onUnmounted(() => {
             <li v-for="item of menuitems" :key="item.title">
               <NuxtLink
                 :to="item.path"
+                @click="open = false"
                 :class="[
                   'flex lg:px-3 py-2 text-white transition duration-200 ease-in-out',
                   scrolled ? 'hover:text-black' : 'hover:text-amber-500',
@@ -90,21 +94,23 @@ onUnmounted(() => {
                 {{ item.title }}
               </NuxtLink>
             </li>
+            <!-- Moved mobile-only links inside the main nav list -->
+            <div class="lg:hidden flex flex-col gap-2 mt-3">
+              <NuxtLink to="about" class="text-white hover:text-amber-500" @click="open = false">
+                Who am I?
+              </NuxtLink>
+              <LandingLink href="pricing" size="md" class="w-full" @click="open = false">
+                Get Started
+              </LandingLink>
+            </div>
           </ul>
-          <div class="lg:hidden flex flex-col items-start mt-3 mx-3 gap-4">
-            <NuxtLink to="about" class="text-white hover:text-amber-500"
-              >Who am I?</NuxtLink
-            >
-            <LandingLink href="pricing" size="md">Get Started/</LandingLink>
-          </div>
         </nav>
-        <div class="justify-items-end">
-          <div class="hidden lg:flex items-center gap-4">
-            <NuxtLink to="about" class="text-white hover:text-amber-500"
-              >Who am I?</NuxtLink
-            >
-            <LandingLink href="pricing" size="md">Get Started</LandingLink>
-          </div>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <NuxtLink to="about" class="text-white hover:text-amber-500"
+            >Who am I?</NuxtLink
+          >
+          <LandingLink href="pricing" size="md">Get Started</LandingLink>
         </div>
       </div>
     </header>
