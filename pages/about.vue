@@ -4,12 +4,12 @@
   });
 
   
-
+  const TeamImg4 = "/ethan.jpg"
   const TeamImg3 = "/simon.JPEG";
   const TeamImg2 = "/simonSurf.jpg";
   const TeamImg1 = "/simonTravel.jpeg";
 
-  const team = [
+  const Simon = [
     {
       name: "Traveler",
       title: "North America",
@@ -44,6 +44,20 @@
         "In 2022, I discovered a passion for coding while studying in my father’s hometown. Armed with new skills, I started my own business designing websites.",
     },
   ];
+
+  const Team = [
+    {
+      name: "Ethan",
+      title: "CTO & Co-founder",
+      avatar: {
+        src: TeamImg4,
+        width: 580,
+        height: 580,
+      },
+      txtBlock:
+        "Ethan is our Co-Founder and CTO. He brings over a year of industry related experience, and leads all technology decisions, product development, and infrastructure for the web solutions that empowers your small business to succeed online."
+    },
+  ];
 </script>
 
 <template>
@@ -58,7 +72,9 @@
 
     <!-- About Section -->
     <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
-      <h2 class="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500  text-center">About Me</h2>
+      <h2 class="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 text-center">
+        About Me
+      </h2>
       <p class="text-lg leading-relaxed text-gray-300 text-center">
         Born and raised in Connecticut, I’ve lived in North Haven for 8 years.
         After graduating high school, I didn’t have much of a plan beyond the
@@ -66,26 +82,52 @@
       </p>
     </div>
 
-    <!-- Team Section -->
-     <div class="bg-black rounded-lg pb-16 mx-60 mt-8 py-8">
+    <!-- Simon Section -->
+    <div class="bg-black rounded-lg pb-16 mx-60 mt-8 py-8">
       <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg">
-      <div
-        v-for="(member, index) in team"
-        :key="index"
-        class="team-card p-6 bg-purple-800 rounded-lg shadow-md hover:shadow-lg bg-gradient-to-r hover:from-purple-600 hover:to-orange-500 transition"
-      >
-        <img
-          :src="member.avatar.src"
-          :alt="member.name"
-          class="w-full h-56 object-cover rounded-md mb-4"
-        />
-        <h3 class="text-xl font-semibold text-cyan-500">{{ member.name }}</h3>
-        <h4 class="text-sm text-purple-500">{{ member.title }}</h4>
-        <p class="text-cyan-100 mt-2">{{ member.txtBlock }}</p>
+        <div
+          v-for="(item, index) in Simon"
+          :key="index"
+          class="team-card p-6 bg-purple-800 rounded-lg shadow-md hover:shadow-lg bg-gradient-to-r hover:from-purple-600 hover:to-orange-500 transition"
+        >
+          <img
+            :src="item.avatar.src"
+            :alt="item.name"
+            class="w-full h-56 object-cover rounded-md mb-4"
+          />
+          <h3 class="text-xl font-semibold text-cyan-500">{{ item.name }}</h3>
+          <h4 class="text-sm text-purple-500">{{ item.title }}</h4>
+          <p class="text-cyan-100 mt-2">{{ item.txtBlock }}</p>
+        </div>
       </div>
     </div>
-     </div>
-    
+
+    <!-- Meet the Team Section -->
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-orange-500 text-center">
+        Meet the Team
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-300 text-center">
+        The driving force behind Undercloud, working to help small businesses grow their online presence.
+      </p>
+    </div>
+
+    <div class="bg-black rounded-lg pb-16 mx-60 mt-8 py-8 flex justify-center">
+      <div
+        v-for="(member, index) in Team"
+        :key="index"
+        class="team-card p-6 bg-purple-800 rounded-lg shadow-md hover:shadow-lg bg-gradient-to-r hover:from-purple-600 hover:to-orange-500 transition max-w-md"
+      >
+    <img
+      :src="member.avatar.src"
+      :alt="member.name"
+      class="w-full h-56 object-cover rounded-md mb-4"
+    />
+    <h3 class="text-xl font-semibold text-cyan-500">{{ member.name }}</h3>
+    <h4 class="text-sm text-purple-500">{{ member.title }}</h4>
+    <p class="text-cyan-100 mt-2">{{ member.txtBlock }}</p>
+    </div>
+  </div>
   </LandingContainer>
 </template>
 
