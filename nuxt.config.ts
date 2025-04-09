@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-icon", "@nuxtjs/robots", "@nuxtjs/sitemap"],
+  modules: ["nuxt-icon"],
   compatibilityDate: "2024-11-23",
   app: {
     head: {
@@ -30,16 +30,17 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
-  sitemap: {
-    hostname: "https://undercloud.pro",
-    gzip: true,
-    exclude: [], // routes to exclude here
-    routes: ["/", "/about", "/pricing", "/contact"],
-  },
-  robots: {
-    UserAgent: "*",
-    Allow: "/",
-    Sitemap: "https://undercloud.pro/sitemap.xml",
-  },
+  //"@nuxtjs/robots",
+  //"@nuxtjs/sitemap"
+  // sitemap: {
+  //   hostname: "https://undercloud.pro",
+  //   gzip: true,
+  //   exclude: [], // routes to exclude here
+  //   routes: ["/", "/about", "/pricing", "/contact"],
+  // },
+  // robots: {
+  //   UserAgent: "*",
+  //   Allow: "/",
+  //   Sitemap: "https://undercloud.pro/sitemap.xml",
+  // },
 });
