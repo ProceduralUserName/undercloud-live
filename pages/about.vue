@@ -112,7 +112,7 @@
       </p>
     </div>
 
-    <div class="bg-black rounded-lg pb-16 mx-60 mt-8 py-8 flex justify-center">
+    <div class="bg-black rounded-lg pb-16 mx-auto mt-8 py-8 flex justify-center">
       <div
         v-for="(member, index) in Team"
         :key="index"
